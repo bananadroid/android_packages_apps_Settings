@@ -180,6 +180,14 @@
             android:summary="@string/summary_placeholder"
             android:selectable="false"/>
 
+        <!-- Changelog -->
+        <Preference
+            android:key="changelog"
+            android:order="49"
+            android:title="@string/changelog_title"
+            android:summary="@string/changelog_summary"
+            android:fragment="com.android.settings.banana.Changelog" />
+
         <!-- Manual -->
         <Preference
             android:key="manual"
