@@ -574,4 +574,7 @@
     <string name="unit_seconds">Second(s)</string>
     <string name="volume_dialog_timeout_title">Volume panel timeout</string>
     <string name="volume_dialog_timeout_summary">The time it takes for volume panel to fade</string>
+
+    <!-- Screenshot shutter -->
+    <string name="screenshot_shutter_sound_title">Screenshot sound</string>
 </resources>
