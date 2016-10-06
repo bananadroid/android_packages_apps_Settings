@@ -116,6 +116,14 @@
         android:summary="@string/volume_panel_on_left_summary"
         android:defaultValue="false" />
 
+    <!-- Live volume steps -->
+    <Preference
+        android:key="volume_steps"
+        android:title="@string/volume_steps_title"
+        android:order="-134"
+        android:summary="@string/volume_steps_summary"
+        android:fragment="com.banana.settings.fragments.VolumeSteps" />
+
     <!-- TODO(b/174964721): make this a PrimarySwitchPreference -->
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
