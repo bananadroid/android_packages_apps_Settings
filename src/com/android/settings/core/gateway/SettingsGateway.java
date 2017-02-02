@@ -37,6 +37,7 @@ import com.android.settings.accounts.ManagedProfileSettings;
 import com.android.settings.applications.AppAndNotificationDashboardFragment;
 import com.android.settings.applications.ProcessStatsSummary;
 import com.android.settings.applications.ProcessStatsUi;
+import com.android.settings.applications.RunningServices;
 import com.android.settings.applications.UsageAccessDetails;
 import com.android.settings.applications.appinfo.AppInfoDashboardFragment;
 import com.android.settings.applications.appinfo.DrawOverlayDetails;
@@ -314,7 +315,8 @@ public class SettingsGateway {
             MediaControlsSettings.class.getName(),
             BananaGear.class.getName(),
             SmartPixels.class.getName(),
-            StartThemes.class.getName()
+            StartThemes.class.getName(),
+            RunningServices.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {
@@ -357,5 +359,6 @@ public class SettingsGateway {
             // BananaDroid
             Settings.BananaGearActivity.class.getName(),
             Settings.SmartPixelsActivity.class.getName(),
+            Settings.DevRunningServicesActivity.class.getName(),
     };
 }
