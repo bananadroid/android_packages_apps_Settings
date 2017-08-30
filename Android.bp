@@ -54,12 +54,21 @@ android_library {
         "SpaPrivilegedLib-defaults",
     ],
 
-    srcs: ["src/**/*.java", "src/**/*.kt"],
+    srcs: [
+        "src/**/*.java",
+        "src/**/*.kt",
+        "BananaGear/src/**/*.java",
+        "BananaGear/src/**/*.kt",
+    ],
     resource_dirs: [
         "res",
         "res-export", // for external usage
         "res-product",
+        "BananaGear/res",
     ],
+
+    aaptflags: ["--extra-packages com.banana.settings"],
+
     static_libs: [
         "androidx-constraintlayout_constraintlayout",
         "androidx.slice_slice-builders",

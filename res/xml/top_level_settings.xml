@@ -51,6 +51,14 @@
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
+    <Preference
+        android:key="top_level_bananagear"
+        android:title="@string/bananagear_title"
+        android:summary="@string/bananagear_summary"
+        android:icon="@drawable/ic_settings_bananagear"
+        android:order="-135"
+        android:fragment="com.banana.settings.BananaGear"/>
+
     <com.android.settings.widget.HomepagePreference
         android:fragment="com.android.settings.applications.AppDashboardFragment"
         android:icon="@drawable/ic_apps"
