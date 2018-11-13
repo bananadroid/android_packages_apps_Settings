@@ -97,6 +97,9 @@
     <!-- Density category -->
     <string name="density_category">Density options</string>
 
+    <!-- Other category -->
+    <string name="other_category">Other options</string>
+
     <!-- Swipe fingerprint dismiss notifications -->
     <string name="fp_swipe_to_dismiss_notifications_title">Swipe fingerprint left or right to dismiss notifications</string>
     <string name="fp_swipe_to_dismiss_notifications_summary">To dismiss your notifications, swipe left or right on the fingerprint sensor on the back of your phone.</string>
@@ -292,5 +295,9 @@
         <item quantity="other">%d apps locked</item>
     </plurals>
     <string name="keywords_applock_settings">applock, applocker, app lock, app locker</string>
+
+    <!-- Font Engine -->
+    <string name="font_picker_title">Font style</string>
+    <string name="disable_fonts_installed_title">Font picker is unavailable to avoid conflicts with Substratum. Uninstall it if you wish to use the font picker.</string>
 
 </resources>
