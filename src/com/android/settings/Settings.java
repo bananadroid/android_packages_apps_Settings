@@ -245,5 +245,6 @@ public class Settings extends SettingsActivity {
     public static class SmartPixelsActivity extends SettingsActivity { /* empty */ }
     public static class StartThemesActivity extends SettingsActivity {}
     public static class DevRunningServicesActivity extends SettingsActivity { /* empty */ }
+    public static class GamingModeActivity extends SettingsActivity {}
 
 }
