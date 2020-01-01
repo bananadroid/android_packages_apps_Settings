@@ -21,6 +21,7 @@ import com.android.settings.DisplaySettings;
 import com.android.settings.IccLockSettings;
 import com.android.settings.MasterClear;
 import com.android.settings.Settings;
+import com.android.settings.StartThemes;
 import com.android.settings.TestingSettings;
 import com.android.settings.TetherSettings;
 import com.android.settings.TrustedCredentialsSettings;
@@ -312,7 +313,8 @@ public class SettingsGateway {
             InteractAcrossProfilesDetails.class.getName(),
             MediaControlsSettings.class.getName(),
             BananaGear.class.getName(),
-            SmartPixels.class.getName()
+            SmartPixels.class.getName(),
+            StartThemes.class.getName()
     };
 
     public static final String[] SETTINGS_FOR_RESTRICTED = {

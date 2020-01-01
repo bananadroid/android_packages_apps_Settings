@@ -30,5 +30,7 @@
     <string name="theme_customization_device_default">Device default</string>
     <!-- BananaDroid settings icon background-->
     <color name="homepage_bananagear_background">#f3d324</color>
+    <!-- Themes -->
+    <color name="homepage_du_themes_background">#FF5E35B1</color>
 
 </resources>
