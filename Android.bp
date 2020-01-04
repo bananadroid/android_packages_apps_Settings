@@ -65,6 +65,7 @@ android_library {
         "res-export", // for external usage
         "res-product",
         "BananaGear/res",
+        "TouchGestures/res"
     ],
 
     aaptflags: ["--extra-packages com.banana.settings"],
