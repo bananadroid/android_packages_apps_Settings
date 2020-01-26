@@ -34,4 +34,8 @@
     <!-- Whether to show Google account avatar in settings -->
     <bool name="config_show_google_account_avatar">false</bool>
 
+    <!-- Customize your device -->
+    <string name="config_du_themes_package" translatable="false">com.dirtyunicorns.themes</string>
+    <string name="config_du_themes_class" translatable="false">com.dirtyunicorns.themes.MainActivity</string>
+
 </resources>
