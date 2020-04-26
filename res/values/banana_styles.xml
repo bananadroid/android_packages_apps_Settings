@@ -56,4 +56,8 @@
         <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
     </style>
 
+    <declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference"/>
+    </declare-styleable>
+
 </resources>
