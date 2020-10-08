@@ -90,4 +90,8 @@
         <item name="cardBackgroundColor">@android:color/transparent</item>
     </style>
 
+    <declare-styleable name="DeviceCardView">
+        <attr name="extra_title" format="string"/>
+    </declare-styleable>
+
 </resources>

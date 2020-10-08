@@ -407,4 +407,9 @@
     <!-- Battery saver -->
     <string name="battery_saver_is_enabled">Battery saver is enabled</string>
 
+    <!-- About phone cards -->
+    <string name="storage_card_title">Storage</string>
+    <string name="storage_card_info">Occupied</string>
+    <string name="about_device_rom_title">BananaDroid %s</string>
+
 </resources>

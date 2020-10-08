@@ -109,4 +109,7 @@
     <dimen name="op_layout_start_padding">15.0dip</dimen>
     <dimen name="op_layout_top_margin">20.0dip</dimen>
 
+    <dimen name="storage_card_min_width">148dp</dimen>
+    <dimen name="storage_card_min_height">@dimen/storage_card_min_width</dimen>
+
 </resources>
