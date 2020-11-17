@@ -33,4 +33,6 @@
     <!-- Themes -->
     <color name="homepage_du_themes_background">#FF5E35B1</color>
 
+    <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
+
 </resources>
