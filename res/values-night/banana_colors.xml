@@ -34,4 +34,6 @@
     <color name="custom_top_cardview">#242527</color>
     <color name="custom_ripple_background">#4DFFFFFF</color>
 
+    <color name="dot_pref_emergency_color">#B2CC0000</color>
+
 </resources>

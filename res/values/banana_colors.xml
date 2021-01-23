@@ -93,4 +93,7 @@
     <color name="oos2_homepage_icon_bananagear_color">#f3d324</color>
 
     <color name="custom_ripple_background">#4DFFFFFF</color>
+
+    <color name="dot_pref_emergency_color">#B2FF4444</color>
+    <color name="dot_pref_ripple">#1f000000</color>
 </resources>
