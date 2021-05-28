@@ -161,13 +161,8 @@
         android:fragment="com.android.settings.display.VrDisplayPreferencePicker" />
         
     <PreferenceCategory
-        android:key="other_category"
-        android:title="@string/other_category">
-
-        <com.android.settings.display.FontDialogPreference
-            android:key="custom_font"
-            android:title="@string/font_picker_title"
-            android:persistent="false" />
+        android:key="density_category"
+        android:title="@string/density_category">
 
         <Preference
             android:key="font_size"
