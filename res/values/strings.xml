@@ -2887,7 +2887,8 @@
     <!-- Wallpaper settings title [CHAR LIMIT=30] -->
     <string name="wallpaper_settings_title">Wallpaper</string>
     <!-- Styles & Wallpapers settings title [CHAR LIMIT=30] -->
-    <string name="style_and_wallpaper_settings_title">Styles &amp; wallpapers</string>
+    <string name="style_and_wallpaper_settings_title">Homescreen styles</string>
+    <string name="wallpaper_settings_summary">Wallpaper, grid, lockclock</string>
     <!-- Wallpaper settings summary when default wallpaper is used [CHAR LIMIT=NONE] -->
     <string name="wallpaper_settings_summary_default">Default</string>
     <!-- Wallpaper settings summary when wallpaper has been updated [CHAR LIMIT=NONE] -->
@@ -11915,7 +11916,7 @@
     <!-- If blurs are supported on SurfaceFlinger. [CHAR LIMIT=60] -->
     <string name="enable_blurs_on_windows_title">Enable blurs</string>
     <!-- If blurs are supported on SurfaceFlinger, summary. [CHAR LIMIT=NONE] -->
-    <string name="enable_blurs_on_windows_summary">Enables window blurs at compositor level\nRequires device reboot</string>
+    <string name="enable_blurs_on_windows_summary">Requires device reboot</string>
 
     <!-- Title for the top level Privacy Settings [CHAR LIMIT=30]-->
     <string name="privacy_dashboard_title">Privacy</string>
