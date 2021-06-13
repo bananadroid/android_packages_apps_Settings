@@ -51,7 +51,7 @@
         android:key="top_level_bananagear"
         android:title="@string/bananagear_title"
         android:summary="@string/bananagear_summary"
-        android:icon="@drawable/ic_homepage_bananagear"
+        android:icon="@drawable/ic_homepage_bananagear_stylish"
         android:order="-95"
         android:fragment="com.banana.settings.BananaGear"/>
 
@@ -59,7 +59,7 @@
         android:key="top_level_themes"
         android:title="@string/du_themes_title"
         android:summary="@string/du_themes_summary"
-        android:icon="@drawable/ic_homepage_du_themes"
+        android:icon="@drawable/ic_homepage_duthemes_stylish"
         android:fragment="com.android.settings.StartThemes"
         android:order="-92"/>
 

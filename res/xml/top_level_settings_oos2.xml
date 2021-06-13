@@ -36,6 +36,22 @@
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
+    <Preference
+        android:key="top_level_bananagear"
+        android:title="@string/bananagear_title"
+        android:summary="@string/bananagear_summary"
+        android:icon="@drawable/ic_homepage_bananagear_oos2"
+        android:order="-150"
+        android:fragment="com.banana.settings.BananaGear"/>
+
+    <Preference
+        android:key="top_level_themes"
+        android:title="@string/du_themes_title"
+        android:summary="@string/du_themes_summary"
+        android:icon="@drawable/ic_homepage_duthemes_oos2"
+        android:order="-147"
+        android:fragment="com.android.settings.StartThemes"/>
+
     <com.android.settings.ui.TopLevelPreferenceDivider
         android:key="top_level_divider_one"
         android:order="-145"/>
