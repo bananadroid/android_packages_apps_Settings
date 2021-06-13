@@ -46,6 +46,7 @@ import android.view.View.OnLongClickListener;
 import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceCategory;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.loader.app.LoaderManager;
@@ -94,7 +95,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     private static final String KEY_SCREEN_USAGE = "screen_usage";
     private static final String KEY_TIME_SINCE_LAST_FULL_CHARGE = "last_full_charge";
     private static final String KEY_BATTERY_TEMP = "battery_temp";
-
+    private static final String KEY_ADAPTIVE_CHARGING_CATEGORY = "adaptive_charging_category";
     @VisibleForTesting
     static final int BATTERY_INFO_LOADER = 1;
     @VisibleForTesting
@@ -130,6 +131,7 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
     @VisibleForTesting
     BatteryTipPreferenceController mBatteryTipPreferenceController;
 
+    private PreferenceCategory mAdaptiveChargingCat;
     private SharedPreferences mSharedPreferences;
     private boolean mUsesCelcius = true;
 
@@ -272,6 +274,12 @@ public class PowerUsageSummary extends PowerUsageBase implements OnLongClickList
         Editor editor = mSharedPreferences.edit();
         editor.putBoolean("uses_celcius", mUsesCelcius);
         editor.commit();
+
+        // Check availability of Adaptive Charging
+        mAdaptiveChargingCat = (PreferenceCategory) findPreference(KEY_ADAPTIVE_CHARGING_CATEGORY);
+        if (!getResources().getBoolean(R.bool.config_supportAdaptiveCharging)) {
+            getPreferenceScreen().removePreference(mAdaptiveChargingCat);
+        }
 
         updateBatteryTempPreference(false);
     }
