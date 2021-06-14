@@ -606,4 +606,7 @@
     <string name="max_call_volume_title">Calls</string>
     <string name="max_alarm_volume_title">Alarms</string>
     <string name="steps_unit">steps</string>
+
+    <!-- Max refresh rate -->
+    <string name="max_refresh_rate_title">Peak refresh rate</string>
 </resources>
