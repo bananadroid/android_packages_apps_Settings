@@ -54,8 +54,6 @@ public class SettingsHomepageActivity extends FragmentActivity {
     ImageView avatarView;
     UserManager mUserManager;
 
-    boolean mShowAccountAvatar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,22 +73,16 @@ public class SettingsHomepageActivity extends FragmentActivity {
         FeatureFactory.getFactory(this).getSearchFeatureProvider()
                 .initSearchToolbar(this /* activity */, toolbar, SettingsEnums.SETTINGS_HOMEPAGE);
 
-        mShowAccountAvatar = getResources().getBoolean(R.bool.config_show_google_account_avatar);
-
         avatarView = root.findViewById(R.id.account_avatar);
-        if (mShowAccountAvatar) {
-            getLifecycle().addObserver(new AvatarViewMixin(this, avatarView));
-        } else {
-            avatarView.setImageDrawable(getCircularUserIcon(context));
-            avatarView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(Intent.ACTION_MAIN);
-                    intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
-                    startActivity(intent);
-                }
-            });
-        }
+        avatarView.setImageDrawable(getCircularUserIcon(context));
+        avatarView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.setComponent(new ComponentName("com.android.settings","com.android.settings.Settings$UserSettingsActivity"));
+                startActivity(intent);
+            }
+        });
 
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
