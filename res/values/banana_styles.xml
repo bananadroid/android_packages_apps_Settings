@@ -24,7 +24,7 @@
     <style name="homepage_spacer_title_style">
         <item name="android:textSize">40sp</item>
         <item name="android:textColor">@color/settingsHeaderColor</item>
-        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="op_control_text_style_base">
@@ -33,7 +33,7 @@
 
     <style name="op_control_text_style_body1" parent="@style/op_control_text_style_base">
         <item name="android:textSize">13.0sp</item>
-        <item name="android:fontFamily">@*android:string/config_bodyFontFamily</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <style name="op_theme_customization_text_style" parent="@style/op_control_text_style_body1">
@@ -42,18 +42,18 @@
 
     <style name="op_control_text_style_h6" parent="@style/op_control_text_style_base">
         <item name="android:textSize">16.0sp</item>
-        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
     <style name="op_control_text_style_subtitle" parent="@style/op_control_text_style_base">
         <item name="android:textSize">13.0sp</item>
-        <item name="android:fontFamily">@*android:string/config_lightFontFamily</item>
+        <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
     <style name="op_control_text_style_h2" parent="@style/op_control_text_style_base">
         <item name="android:textSize">48.0sp</item>
         <item name="android:lineSpacingMultiplier">@dimen/op_line_space_multiplier_h2</item>
-        <item name="android:fontFamily">@*android:string/config_headlineFontFamily</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <declare-styleable name="Themes">
