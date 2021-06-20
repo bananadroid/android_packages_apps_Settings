@@ -60,4 +60,9 @@
         <attr name="waveViewStyle" format="reference"/>
     </declare-styleable>
 
+    <!-- Fingerprint -->
+    <style name="FingerprintGravity">
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>
