@@ -109,6 +109,12 @@
         android:fragment="com.android.settings.gestures.VolumeSkipTrackSettings"
         settings:controller="com.android.settings.gestures.VolumeSkipTrackPreferenceController" />
 
+    <com.bananadroid.support.preferences.SystemSettingSwitchPreference
+        android:key="status_bar_brightness_control"
+        android:title="@string/status_bar_toggle_brightness"
+        android:summary="@string/status_bar_toggle_brightness_summary"
+        android:defaultValue="false" />
+
     </PreferenceCategory>
 
     <PreferenceCategory
