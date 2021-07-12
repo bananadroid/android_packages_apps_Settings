@@ -108,4 +108,10 @@
     <dimen name="op_layout_start_margin">15.0dip</dimen>
     <dimen name="op_layout_start_padding">15.0dip</dimen>
     <dimen name="op_layout_top_margin">20.0dip</dimen>
+    <dimen name="app2_bar_height">250dp</dimen>
+    <dimen name="preference_divider">8dp</dimen>
+    <dimen name="nez_cardview_radius">20.0dip</dimen>
+    <dimen name="nez_top_icn">24.0dip</dimen>
+    <dimen name="nez_top_cardview_margin_list">16.dip</dimen>
+    <dimen name="nez_top_cardview_padding">0.0dip</dimen>
 </resources>

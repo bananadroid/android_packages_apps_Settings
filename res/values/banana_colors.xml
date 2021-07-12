@@ -94,5 +94,6 @@
 
     <color name="nez_top_cardview">#161616</color>
     <color name="nez_cardview">#242527</color>
+    <color name="settext">#000000</color>
 
 </resources>
