@@ -156,22 +156,17 @@
         android:key="top_level_accounts"
         android:title="@string/account_dashboard_title"
         android:summary="@string/summary_placeholder"
-        android:layout="@layout/custom_cardview_top_account"
+        android:layout="@layout/custom_cardview_top_misc"
         android:icon="@drawable/ic_homepage_accounts_stylish"
         android:order="-20"
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
-    <Preference 
-        android:layout="@layout/custom_cardview_divider" 
-        android:selectable="false"
-        android:order="2"/>
-
     <Preference
         android:key="top_level_system"
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
-        android:layout="@layout/custom_cardview_top_misc"
+        android:layout="@layout/custom_top_card_middle"
         android:icon="@drawable/ic_homepage_system_dashboard_stylish"
         android:order="10"
         android:fragment="com.android.settings.system.SystemDashboardFragment"/>

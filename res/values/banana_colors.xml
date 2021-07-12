@@ -92,8 +92,8 @@
     <color name="oos2_homepage_icon_wellbeing_color">#f06292</color>
     <color name="oos2_homepage_icon_bananagear_color">#f3d324</color>
 
-    <color name="custom_top_cardview">#f2f2f2</color>
-    <color name="custom_cardview">#f2f2f2</color>
+    <color name="custom_top_cardview">#4d242527</color>
+    <color name="custom_cardview">#4d242527</color>
     <color name="cardview_light_background">@android:color/transparent</color>
     <color name="cardview_dark_background">@android:color/transparent</color>
 
