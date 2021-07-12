@@ -404,4 +404,9 @@
     <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
     <string name="touchscreen_gesture_settings_summary">Perform various touchscreen gestures for quick actions</string>
 
+    <string name="conmoment">Connections</string>
+    <string name="topsystem">System</string>
+    <string name="topaccount">Account</string>
+    <string name="topmisc">Miscellaneous</string>
+    <string name="topprivacy">Privacy</string>
 </resources>

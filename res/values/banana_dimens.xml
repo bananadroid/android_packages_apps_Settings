@@ -91,4 +91,11 @@
     <!-- Storage donut -->
     <dimen name="oneplus_settings_storage_summary_donut_margin_top">22dp</dimen>
     <dimen name="oneplus_settings_storage_summary_donut_padding_bottom">26dp</dimen>
+
+    <!-- Custom cardview -->
+    <dimen name="custom_cardview_radius">20.0dip</dimen>
+    <dimen name="custom_top_icn">24.0dip</dimen>
+    <dimen name="custom_top_cardview_margin_list">16.dip</dimen>
+    <dimen name="custom_top_cardview_padding">0.0dip</dimen>
+
 </resources>
