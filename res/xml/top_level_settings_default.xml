@@ -41,6 +41,11 @@
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
+    <Preference 
+        android:layout="@layout/custom_cardview_divider" 
+        android:selectable="false"
+        android:order="-105"/>
+
     <Preference
         android:key="top_level_apps_and_notifs"
         android:title="@string/app_and_notification_dashboard_title"
@@ -98,6 +103,11 @@
         android:fragment="com.android.settings.deviceinfo.StorageSettings"
         settings:controller="com.android.settings.deviceinfo.TopLevelStoragePreferenceController"/>
 
+    <Preference 
+        android:layout="@layout/custom_cardview_divider" 
+        android:selectable="false"
+        android:order="-57"/>
+
     <Preference
         android:key="top_level_privacy"
         android:title="@string/privacy_dashboard_title"
@@ -128,6 +138,21 @@
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
     <Preference
+        android:key="top_level_accessibility"
+        android:title="@string/accessibility_settings"
+        android:summary="@string/accessibility_settings_summary"
+        android:layout="@layout/custom_top_card_bottom"
+        android:icon="@drawable/ic_homepage_accessibility_stylish"
+        android:order="-30"
+        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
+        settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
+
+    <Preference 
+        android:layout="@layout/custom_cardview_divider" 
+        android:selectable="false"
+        android:order="-25"/>
+
+    <Preference
         android:key="top_level_accounts"
         android:title="@string/account_dashboard_title"
         android:summary="@string/summary_placeholder"
@@ -137,15 +162,10 @@
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
-    <Preference
-        android:key="top_level_accessibility"
-        android:title="@string/accessibility_settings"
-        android:summary="@string/accessibility_settings_summary"
-        android:layout="@layout/custom_top_card_bottom"
-        android:icon="@drawable/ic_homepage_accessibility_stylish"
-        android:order="-30"
-        android:fragment="com.android.settings.accessibility.AccessibilitySettings"
-        settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
+    <Preference 
+        android:layout="@layout/custom_cardview_divider" 
+        android:selectable="false"
+        android:order="2"/>
 
     <Preference
         android:key="top_level_system"
@@ -165,6 +185,11 @@
         android:order="20"
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
         settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
+    <Preference 
+        android:layout="@layout/custom_cardview_divider" 
+        android:selectable="false"
+        android:order="99"/>
 
     <Preference
         android:key="top_level_support"
