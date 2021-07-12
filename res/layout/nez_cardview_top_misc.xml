@@ -84,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="  Miscellaneous  "
-            android:background="@*android:color/notification_material_background_color"
+            android:background="?android:attr/colorPrimary"
             android:fontFamily="@*android:string/config_headlineFontFamily"
             android:layout_marginStart="22dp"
             android:textColor="?android:attr/textColorSecondary"

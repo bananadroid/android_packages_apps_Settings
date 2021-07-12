@@ -56,8 +56,6 @@
     <color name="dashboard_custom_wellbeing">#5BF67D</color>
     <color name="dashboard_custom_bananagear">#FFE961</color>
 
-    <color name="settingsHeaderColor">@*android:color/accent_device_default_light</color>
-
     <!-- OnePlus Dashboard -->
     <color name="oneplus_homepage_icon_background">#ffffff</color>
     <color name="oneplus_accent_color">@color/settingsHeaderColor</color>
