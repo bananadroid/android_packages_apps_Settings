@@ -144,14 +144,14 @@
         android:summary="@string/accessibility_settings_summary"
         android:layout="@layout/nez_top_card_bottom"
         android:icon="@drawable/ic_homepage_accessibility"
-        android:order="-58"
+        android:order="-55"
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
 
     <Preference 
         android:layout="@layout/nez_cardview_divider" 
         android:selectable="false"
-        android:order="-57"/>
+        android:order="-53"/>
 
     <Preference
         android:key="top_level_privacy"
@@ -159,7 +159,7 @@
         android:summary="@string/privacy_dashboard_summary"
         android:layout="@layout/nez_cardview_top_privacy"
         android:icon="@drawable/ic_homepage_privacy"
-        android:order="-55"
+        android:order="-50"
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"/>
 
     <Preference
@@ -168,7 +168,7 @@
         android:summary="@string/location_settings_loading_app_permission_stats"
         android:layout="@layout/nez_top_card_middle"
         android:icon="@drawable/ic_homepage_location"
-        android:order="-50"
+        android:order="-40"
         android:fragment="com.android.settings.location.LocationSettings"
         settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
 
@@ -178,14 +178,14 @@
         android:summary="@string/summary_placeholder"
         android:layout="@layout/nez_top_card_bottom"
         android:icon="@drawable/ic_homepage_security"
-        android:order="-40"
+        android:order="-30"
         android:fragment="com.android.settings.security.SecuritySettings"
         settings:controller="com.android.settings.security.TopLevelSecurityEntryPreferenceController"/>
 
     <Preference 
         android:layout="@layout/nez_cardview_divider" 
         android:selectable="false"
-        android:order="-35"/>
+        android:order="-25"/>
 
     <Preference
         android:key="top_level_accounts"
@@ -193,7 +193,7 @@
         android:summary="@string/summary_placeholder"
         android:layout="@layout/nez_cardview_top_misc"
         android:icon="@drawable/ic_homepage_accounts"
-        android:order="-30"
+        android:order="-20"
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
@@ -220,7 +220,7 @@
     <Preference 
         android:layout="@layout/nez_cardview_divider" 
         android:selectable="false"
-        android:order="21"/>
+        android:order="25"/>
 
     <Preference
         android:key="top_level_support"
