@@ -25,6 +25,7 @@
         android:key="top_level_network"
         android:title="@string/network_dashboard_title"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/custom_cardview_top"
         android:icon="@drawable/ic_homepage_network_stylish"
         android:order="-120"
         android:fragment="com.android.settings.network.NetworkDashboardFragment"
@@ -34,6 +35,7 @@
         android:key="top_level_connected_devices"
         android:title="@string/connected_devices_dashboard_title"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/custom_top_card_bottom"
         android:icon="@drawable/ic_homepage_connected_device_stylish"
         android:order="-110"
         android:fragment="com.android.settings.connecteddevice.ConnectedDeviceDashboardFragment"
@@ -43,22 +45,25 @@
         android:key="top_level_apps_and_notifs"
         android:title="@string/app_and_notification_dashboard_title"
         android:summary="@string/app_and_notification_dashboard_summary"
+        android:layout="@layout/custom_top_card_middle"
         android:icon="@drawable/ic_homepage_apps_stylish"
-        android:order="-100"
+        android:order="-95"
         android:fragment="com.android.settings.applications.AppAndNotificationDashboardFragment"/>
 
     <Preference
         android:key="top_level_bananagear"
         android:title="@string/bananagear_title"
         android:summary="@string/bananagear_summary"
+        android:layout="@layout/custom_cardview_top_system"
         android:icon="@drawable/ic_homepage_bananagear_stylish"
-        android:order="-95"
+        android:order="-100"
         android:fragment="com.banana.settings.BananaGear"/>
 
     <Preference
         android:key="top_level_battery"
         android:title="@string/power_usage_summary_title"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/custom_top_card_middle"
         android:icon="@drawable/ic_homepage_battery_stylish"
         android:fragment="com.android.settings.fuelgauge.PowerUsageSummary"
         android:order="-90"
@@ -68,6 +73,7 @@
         android:key="top_level_display"
         android:title="@string/display_settings"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/custom_top_card_middle"
         android:icon="@drawable/ic_homepage_display_stylish"
         android:order="-80"
         android:fragment="com.android.settings.DisplaySettings"
@@ -77,6 +83,7 @@
         android:key="top_level_sound"
         android:title="@string/sound_settings"
         android:summary="@string/sound_dashboard_summary"
+        android:layout="@layout/custom_top_card_middle"
         android:icon="@drawable/ic_homepage_sound_stylish"
         android:order="-70"
         android:fragment="com.android.settings.notification.SoundSettings"/>
@@ -85,6 +92,7 @@
         android:key="top_level_storage"
         android:title="@string/storage_settings"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/custom_top_card_bottom"
         android:icon="@drawable/ic_homepage_storage_stylish"
         android:order="-60"
         android:fragment="com.android.settings.deviceinfo.StorageSettings"
@@ -94,6 +102,7 @@
         android:key="top_level_privacy"
         android:title="@string/privacy_dashboard_title"
         android:summary="@string/privacy_dashboard_summary"
+        android:layout="@layout/custom_cardview_top_privacy"
         android:icon="@drawable/ic_homepage_privacy_stylish"
         android:order="-55"
         android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"/>
@@ -102,6 +111,7 @@
         android:key="top_level_location"
         android:title="@string/location_settings_title"
         android:summary="@string/location_settings_loading_app_permission_stats"
+        android:layout="@layout/custom_top_card_middle"
         android:icon="@drawable/ic_homepage_location_stylish"
         android:order="-50"
         android:fragment="com.android.settings.location.LocationSettings"
@@ -111,6 +121,7 @@
         android:key="top_level_security"
         android:title="@string/security_settings_title"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/custom_top_card_middle"
         android:icon="@drawable/ic_homepage_security_stylish"
         android:order="-40"
         android:fragment="com.android.settings.security.SecuritySettings"
@@ -120,8 +131,9 @@
         android:key="top_level_accounts"
         android:title="@string/account_dashboard_title"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/custom_cardview_top_account"
         android:icon="@drawable/ic_homepage_accounts_stylish"
-        android:order="-30"
+        android:order="-20"
         android:fragment="com.android.settings.accounts.AccountDashboardFragment"
         settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
 
@@ -129,8 +141,9 @@
         android:key="top_level_accessibility"
         android:title="@string/accessibility_settings"
         android:summary="@string/accessibility_settings_summary"
+        android:layout="@layout/custom_top_card_bottom"
         android:icon="@drawable/ic_homepage_accessibility_stylish"
-        android:order="-20"
+        android:order="-30"
         android:fragment="com.android.settings.accessibility.AccessibilitySettings"
         settings:controller="com.android.settings.accessibility.TopLevelAccessibilityPreferenceController"/>
 
@@ -138,6 +151,7 @@
         android:key="top_level_system"
         android:title="@string/header_category_system"
         android:summary="@string/system_dashboard_summary"
+        android:layout="@layout/custom_cardview_top_misc"
         android:icon="@drawable/ic_homepage_system_dashboard_stylish"
         android:order="10"
         android:fragment="com.android.settings.system.SystemDashboardFragment"/>
@@ -146,6 +160,7 @@
         android:key="top_level_about_device"
         android:title="@string/about_settings"
         android:summary="@string/summary_placeholder"
+        android:layout="@layout/custom_top_card_bottom"
         android:icon="@drawable/ic_homepage_about_stylish"
         android:order="20"
         android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
@@ -155,6 +170,7 @@
         android:key="top_level_support"
         android:summary="@string/support_summary"
         android:title="@string/page_tab_title_support"
+        android:layout="@layout/custom_cardview_single"
         android:icon="@drawable/ic_homepage_support"
         android:order="100"
         settings:controller="com.android.settings.support.SupportPreferenceController"/>
