@@ -30,8 +30,8 @@
     <color name="oos2_homepage_icon_background">#ff202124</color>
     <color name="tl_preference_divider_bg">#ff202124</color>
 
-    <color name="nez_top_cardview">#f2f2f2</color>
-    <color name="nez_cardview">#f2f2f2</color>
+    <color name="nez_top_cardview">#242527</color>
+    <color name="nez_cardview">#242527</color>
 
     <color name="cardview_light_background">@android:color/transparent</color>
     <color name="cardview_dark_background">@android:color/transparent</color>
