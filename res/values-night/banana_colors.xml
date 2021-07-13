@@ -29,4 +29,10 @@
     <color name="oos2_homepage_background">#ff000000</color>
     <color name="oos2_homepage_icon_background">#ff202124</color>
     <color name="tl_preference_divider_bg">#ff202124</color>
+
+    <color name="nez_cardview">#242527</color>
+    <color name="nez_top_cardview">#242527</color>
+    <color name="op_preference_card_background_color">#ff1c1c1e</color>
+    <color name="op_preference_card_background_color_ripple">#33ffffff</color>
+    <color name="settext">#FFFFFF</color>
 </resources>

@@ -391,8 +391,7 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
             } else if (tile.getPackageName().equals(PACKAGENAME_WELLBEING)) {
                 iconDrawable = preference.getContext().getDrawable(R.drawable.ic_homepage_wellbeing_settings);
             }
-            } else if (forceRoundedIcon
-                    && !TextUtils.equals(mContext.getPackageName(), tile.getPackageName())) {
+            } else if (forceRoundedIcon && !TextUtils.equals(mContext.getPackageName(), tile.getPackageName())) {
                 iconDrawable = new AdaptiveIcon(mContext, iconDrawable);
                 ((AdaptiveIcon) iconDrawable).setBackgroundColor(mContext, tile);
             }

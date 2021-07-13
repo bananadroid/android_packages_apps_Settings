@@ -91,4 +91,22 @@
     <!-- Storage donut -->
     <dimen name="oneplus_settings_storage_summary_donut_margin_top">22dp</dimen>
     <dimen name="oneplus_settings_storage_summary_donut_padding_bottom">26dp</dimen>
+
+    <dimen name="card_height_settings">75.0dip</dimen>
+    <dimen name="card_view_start_margin">0.0dip</dimen>
+    <dimen name="card_view_end_margin">0.0dip</dimen>
+    <dimen name="card_view_start_padding">20.0dip</dimen>
+    <dimen name="nez_cardview_startend_padding">20.0dip</dimen>
+    <dimen name="card_view_end_padding">20.0dip</dimen>
+    <dimen name="nez_card_view_preference_padding_top">4.0dp</dimen>
+    <dimen name="nez_card_view_preference_padding_bottom">4.0dp</dimen>
+    <dimen name="op_homepage_corner_radius">20.0dip</dimen>
+    <dimen name="op_icon_outline_width">1.0dip</dimen>
+    <dimen name="op_layout_end_margin">15.0dip</dimen>
+    <dimen name="op_layout_end_padding">15.0dip</dimen>
+    <dimen name="op_layout_height_settings">75.0dip</dimen>
+    <dimen name="op_layout_start_margin">15.0dip</dimen>
+    <dimen name="op_layout_start_padding">15.0dip</dimen>
+    <dimen name="op_layout_top_margin">20.0dip</dimen>
+
 </resources>

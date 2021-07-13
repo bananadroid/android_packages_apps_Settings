@@ -92,4 +92,6 @@
     <color name="oos2_homepage_icon_wellbeing_color">#f06292</color>
     <color name="oos2_homepage_icon_bananagear_color">#f3d324</color>
 
+    <color name="settext">#000000</color>
+
 </resources>
