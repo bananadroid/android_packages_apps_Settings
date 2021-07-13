@@ -524,6 +524,13 @@ public abstract class DashboardFragment extends SettingsPreferenceFragment
                 mIconStyle = Settings.System.getIntForUser(context.getContentResolver(),
                              Settings.System.SETTINGS_DASHBOARD_ICONS, 0, UserHandle.USER_CURRENT);
 		String prefStr = pref.getKey().toString();
+                if (prefStr.equals("dashboard_tile_pref_com.google.android.apps.wellbeing.settings.TopLevelSettingsActivity")){
+		pref.setLayoutResource(R.layout.nez_top_card_middle);
+                } else if (prefStr.equals("dashboard_tile_pref_com.google.android.gms.app.settings.GoogleSettingsIALink")){
+		pref.setLayoutResource(R.layout.nez_top_card_middle);
+                } else if (prefStr.startsWith("dashboard_tile_pref_com.oneplus.extras.DeviceSettings") || prefStr.equals("dashboard_tile_pref_com.oneplus.extras.DeviceSettings") || prefStr.startsWith("dashboard_tile_pref_org.lineageos.settings.device") || prefStr.equals("dashboard_tile_pref_org.lineageos.settings") || prefStr.startsWith("dashboard_tile_pref_org.lineageos.settings") || prefStr.equals("dashboard_tile_pref_com.poco.parts") || prefStr.startsWith("dashboard_tile_pref_com.poco.parts") || prefStr.equals("dashboard_tile_pref_com.xiaomi.parts")|| prefStr.startsWith("dashboard_tile_pref_com.xiaomi.parts") || prefStr.equals("dashboard_tile_pref_com.asus.zenparts") || prefStr.startsWith("dashboard_tile_pref_com.asus.zenparts")) {
+		pref.setLayoutResource(R.layout.nez_top_card_middle);
+                }
                 screen.addPreference(pref);
                 registerDynamicDataObservers(observers);
                 mDashboardTilePrefKeys.put(key, observers);
