@@ -10,7 +10,7 @@
         android:layout_width="fill_parent"
         android:background="@drawable/custom_cardview_bg_top_ripple"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:layout_marginStart="@dimen/custom_top_cardview_padding"
         android:layout_marginEnd="@dimen/custom_top_cardview_padding">
 
@@ -88,8 +88,8 @@
             android:fontFamily="@*android:string/config_headlineFontFamily"
             android:layout_marginStart="22dp"
             android:textColor="?android:attr/textColorSecondary"
-            android:gravity="center_vertical"
-            android:lineHeight="15dp"
+            android:gravity="top|center"
+            android:lineHeight="18dp"
             android:singleLine="true" />
     </LinearLayout>
 </RelativeLayout>
