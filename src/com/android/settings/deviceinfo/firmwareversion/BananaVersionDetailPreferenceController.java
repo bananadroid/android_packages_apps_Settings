@@ -43,6 +43,7 @@ public class BananaVersionDetailPreferenceController extends BasePreferenceContr
 
     private static final String KEY_BANANA_VERSION_PROP = "ro.modversion";
     private static final String KEY_BANANA_RELEASETYPE_PROP = "ro.banana.releasetype";
+    private static final String KEY_BANANA_ZIPTYPE_PROP = "ro.banana.edition";
 
     private final UserManager mUserManager;
     private final long[] mHits = new long[ACTIVITY_TRIGGER_COUNT];
@@ -65,8 +66,10 @@ public class BananaVersionDetailPreferenceController extends BasePreferenceContr
     public CharSequence getSummary() {
 	String[] bananaVer = SystemProperties.get(KEY_BANANA_VERSION_PROP).split("v");
 	String bananaReleasetype =  SystemProperties.get(KEY_BANANA_RELEASETYPE_PROP);
-	if (!bananaVer[1].isEmpty() && !bananaReleasetype.isEmpty())
-	    return bananaVer[1] + " | " + bananaReleasetype;
+        String bananaZiptype =  SystemProperties.get(KEY_BANANA_ZIPTYPE_PROP);
+
+	if (!bananaVer[1].isEmpty() && !bananaReleasetype.isEmpty() && !bananaZiptype.isEmpty())
+	    return bananaVer[1] + " | " + bananaZiptype + " | " + bananaReleasetype;
 	else
             return mContext.getString(R.string.unknown);
     }
