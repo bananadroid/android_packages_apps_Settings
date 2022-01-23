@@ -12,6 +12,8 @@
     <string name="build_date">Build date</string>
     <string name="banana_version">BananaDroid version</string>
     <string name="about_device_name">Device</string>
+    <string name="banana_release_type_title">Release type</string>
+    <string name="banana_maintainer_title">Maintainer</string>
 
     <!-- About phone cards -->
     <string name="about_device_nearby">The device name can and will be seen by the nearby devices</string>
