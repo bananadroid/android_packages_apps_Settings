@@ -51,7 +51,7 @@
         settings:highlightableMenuKey="@string/menu_key_connected_devices"
         settings:controller="com.android.settings.connecteddevice.TopLevelConnectedDevicesPreferenceController"/>
 
-    <Preference
+    <com.android.settings.widget.HomepagePreference
         android:key="top_level_bananagear"
         android:title="@string/bananagear_title"
         android:summary="@string/bananagear_summary"
