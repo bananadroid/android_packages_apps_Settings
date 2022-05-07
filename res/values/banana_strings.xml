@@ -273,4 +273,8 @@
     <!-- Haptic feedback -->
     <string name="back_gesture_haptic_title">Haptic feedback</string>
     <string name="back_gesture_haptic_summary">Vibrate when performing a back gesture</string>
+
+    <!-- Mic + Camera indicator -->
+    <string name="mic_camera_indicator_settings_title">Status bar mic and camera indicator</string>
+    <string name="mic_camera_indicator_settings_description">Show indicator when an any app uses mic or camera</string>
 </resources>
