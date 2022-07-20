@@ -550,6 +550,14 @@ public class NotificationLightSettings extends SettingsPreferenceFragment implem
         return dialog;
     }
 
+    @Override
+    public int getDialogMetricsCategory(int dialogId) {
+        if (dialogId == DIALOG_APPS) {
+            return MetricsEvent.BANANADROID;
+        }
+        return 0;
+    }
+
     /**
      * Application class
      */
