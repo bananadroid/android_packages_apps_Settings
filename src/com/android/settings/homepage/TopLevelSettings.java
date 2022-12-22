@@ -17,6 +17,7 @@
 package com.android.settings.homepage;
 
 import static android.provider.Settings.System.CUSTOM_UI_TOGGLE;
+import static android.provider.Settings.System.ABOUT_PHONE_HEADER;
 import static com.android.settings.search.actionbar.SearchMenuController.NEED_SEARCH_ICON_IN_ACTION_BAR;
 import static com.android.settingslib.search.SearchIndexable.MOBILE;
 
@@ -230,6 +231,11 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
             if (customUIToggleValue == 1) {
                 onSetPrefCard();
             }
+	int aboutStyleToggleValue = Settings.System.getInt(getContext().getContentResolver(),
+                 ABOUT_PHONE_HEADER, 0);
+            if (aboutStyleToggleValue == 1) {
+                onSetAboutStyle();
+            }
     }
 
     private void onSetPrefCard() {
@@ -240,10 +246,21 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
             String key = preference.getKey();
             preference.setLayoutResource(R.layout.top_level_card);
-	    if (key.equals("top_level_about_device")) {
-                preference.setLayoutResource(R.layout.top_level_about);
-            }
 	}
+    }
+
+    private void onSetAboutStyle() {
+        final PreferenceScreen screen = getPreferenceScreen();
+        final int count = screen.getPreferenceCount();
+        for (int i = 0; i < count; i++) {
+            final Preference preference = screen.getPreference(i);
+
+            String key = preference.getKey();
+            if (key.equals("top_level_about_device")) {
+                preference.setLayoutResource(R.layout.top_level_about);
+                preference.setOrder(-180);
+            }
+        }
     }
 
     @Override
