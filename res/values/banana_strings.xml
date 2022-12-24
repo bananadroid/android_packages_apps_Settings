@@ -482,7 +482,6 @@
     <string name="display_cutout_force_fullscreen_summary">Force apps to ignore notch space</string>
     <string name="search">Search</string>
     <string name="search_apps">Search apps</string>
-    <string name="application_icon">Application icon</string>
 
     <!-- Display : Rotation -->
     <string name="display_rotation_title">Rotation settings</string>
