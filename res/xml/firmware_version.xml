@@ -89,4 +89,16 @@
         settings:enableCopying="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SELinuxStatusPreferenceController"/>
 
+    <!-- Changelog -->
+    <Preference
+        android:key="changelog"
+        android:title="@string/changelog_title"
+        android:summary="@string/changelog_summary"
+        settings:layout="@layout/banana_card_about"
+        android:icon="@drawable/ic_about_changelog">
+        <intent android:action="android.intent.action.MAIN"
+             android:targetPackage="com.android.settings"
+             android:targetClass="com.android.settings.banana.ChangelogActivity" />
+    </Preference>
+
 </PreferenceScreen>
