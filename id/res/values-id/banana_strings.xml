@@ -6,43 +6,43 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Android debugging as root -->
     <string name="adb_enable_root">Rooted debugging</string>
-    <string name="adb_enable_summary_root">Allow running Android debugging as root</string>
+    <string name="adb_enable_summary_root">Izinkan untuk menjalankan Android debugging sebagai root</string>
     <!-- Backup Transport selection settings menu and activity title -->
-    <string name="backup_transport_setting_label">Change backup provider</string>
-    <string name="backup_transport_title">Select backup provider</string>
+    <string name="backup_transport_setting_label">Ubah layanan backup</string>
+    <string name="backup_transport_title">Pilih layanan backup</string>
     <!-- About phone screen,  setting option name  [CHAR LIMIT=40] -->
-    <string name="build_date">Build date</string>
-    <string name="banana_version">BananaDroid version</string>
-    <string name="about_device_name">Device</string>
-    <string name="banana_release_type_title">Release type</string>
-    <string name="banana_maintainer_title">Maintainer</string>
+    <string name="build_date">Tanggal buat</string>
+    <string name="banana_version">Versi BananaDroid</string>
+    <string name="about_device_name">Perangkat</string>
+    <string name="banana_release_type_title">Tipe rilis</string>
+    <string name="banana_maintainer_title">Pengembang</string>
     <!-- About phone cards -->
-    <string name="about_device_nearby">The device name can and will be seen by the nearby devices</string>
+    <string name="about_device_nearby">Nama perangkat dapat dan akan terlihat oleh perangkat lain yang dekat</string>
     <string name="about_device_version_type_gapps">GApps</string>
     <string name="about_device_version_type_vanilla">Vanilla</string>
-    <string name="version">Banana Version</string>
-    <string name="edit">Edit</string>
-    <string name="device_name">Device name</string>
+    <string name="version">Versi Banana</string>
+    <string name="edit">Atur</string>
+    <string name="device_name">Nama perangkat</string>
     <!-- BananaGear -->
     <string name="bananagear_title">Banana Gear</string>
-    <string name="bananagear_summary">Customization tools</string>
+    <string name="bananagear_summary">Alat kustomisasi</string>
     <!-- Hardware info -->
     <string name="platform_revision">Platform</string>
     <string name="total_ram">Total RAM</string>
     <!-- String for removal of sensitive info on about, depending on tap -->
-    <string name="device_info_protected_single_press">Tap to show info</string>
+    <string name="device_info_protected_single_press">Ketuk untuk tampilkan info</string>
     <!-- SELinux Status -->
-    <string name="selinux_status">SELinux status</string>
-    <string name="selinux_status_disabled">Disabled</string>
+    <string name="selinux_status">Status SELinux</string>
+    <string name="selinux_status_disabled">Nonaktif</string>
     <string name="selinux_status_permissive">Permissive</string>
     <string name="selinux_status_enforcing">Enforcing</string>
     <!-- Volume link notification -->
-    <string name="volume_link_notification_title">Link ring &amp; notification volumes</string>
+    <string name="volume_link_notification_title">Hubungkan volume dering &amp; notifikasi</string>
     <!-- Refresh rate -->
     <string name="min_refresh_rate_title">Minimum refresh rate</string>
-    <string name="max_refresh_rate_title">Maximum refresh rate</string>
+    <string name="max_refresh_rate_title">Maksimum refresh rate</string>
     <!-- Hotspot VPN -->
-    <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
+    <string name="tethering_allow_vpn_upstreams_title">Izinkan klien untuk menggunakan VPN</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
     <!-- Changelog -->
     <string name="changelog_title">Changelog</string>
