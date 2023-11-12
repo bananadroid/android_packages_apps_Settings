@@ -126,6 +126,12 @@
         android:defaultValue="false" />
 
     <com.banana.support.preferences.SystemSettingSwitchPreference
+        android:key="volume_media_output_toggle"
+       	android:title="@string/volume_media_output_toggle_title"
+       	android:summary="@string/volume_media_output_toggle_summary"
+       	android:defaultValue="true" />
+
+    <com.banana.support.preferences.SystemSettingSwitchPreference
         android:key="VOLUME_TEXTVIEW"
         android:title="@string/volume_persen_switch_title"
         android:summary="@string/volume_persen_switch_summary"
