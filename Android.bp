@@ -65,6 +65,7 @@ android_library {
         "res-export", // for external usage
         "res-product",
         "BananaGear/res",
+        "SettingsGoogle/res",
         "TouchGestures/res"
     ],
 
