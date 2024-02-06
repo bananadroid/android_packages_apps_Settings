@@ -111,13 +111,9 @@ public class ForcePeakRefreshRatePreferenceController extends TogglePreferenceCo
 
     private float findPeakRefreshRate(Display.Mode[] modes) {
         float peakRefreshRate = DEFAULT_REFRESH_RATE;
-        float defaultPeakRefreshRate = (float) mContext.getResources().getInteger(
-                    com.android.internal.R.integer.config_defaultPeakRefreshRate);
         for (Display.Mode mode : modes) {
-            float refreshRate = Math.round(mode.getRefreshRate());
-            if (refreshRate > peakRefreshRate
-                    && (defaultPeakRefreshRate == 0 || refreshRate <= defaultPeakRefreshRate)) {
-                peakRefreshRate = refreshRate;
+            if (Math.round(mode.getRefreshRate()) > peakRefreshRate) {
+                peakRefreshRate = mode.getRefreshRate();
             }
         }
 
