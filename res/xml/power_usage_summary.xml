@@ -105,6 +105,12 @@
         settings:controller="com.android.settings.display.BatteryPercentagePreferenceController" />
 
     <Preference
+        android:key="battery_info"
+        android:title="@string/battery_info"
+        android:fragment="com.android.settings.deviceinfo.batteryinfo.BatteryInfoFragment"
+        settings:keywords="@string/keywords_battery_info"/>
+
+    <Preference
         android:key="fast_charging"
         android:title="@string/fast_charging_title"
         android:summary="@string/fast_charging_summary"
