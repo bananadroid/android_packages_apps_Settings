@@ -339,9 +339,6 @@
     <string name="bluetooth_timeout_summary">Bluetooth will turn off after <xliff:g id="timeout_description">%1$s</xliff:g> if no devices connected</string>
     <string name="bluetooth_timeout_summary2">Do not automatically turn off Bluetooth</string>
 
-    <!-- Battery temperature -->
-    <string name="battery_temperature">Battery temperature</string>
-
     <!-- Charging control settings -->
     <string name="charging_control_title">Charging control</string>
     <string name="charging_control_summary">Customize charging schedule and limits for your device</string>

@@ -64,7 +64,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
     @VisibleForTesting
     static final String KEY_BATTERY_USAGE = "battery_usage_summary";
 
-    private static final String KEY_BATTERY_TEMP = "battery_temperature";
     private static final String KEY_FAST_CHARGING = "fast_charging";
 
     @VisibleForTesting
@@ -110,7 +109,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
                     mBatteryHeaderPreferenceController.updateHeaderByBatteryTips(
                             mBatteryTipPreferenceController.getCurrentBatteryTip(), batteryInfo);
                     mBatteryInfo = batteryInfo;
-                    mBatteryTempPref.setSummary(mBatteryInfo.batteryTemp + " \u2103");
                 }
 
                 @Override
@@ -165,7 +163,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
         initFeatureProvider();
         initPreference();
 
-        mBatteryTempPref = (PowerGaugePreference) findPreference(KEY_BATTERY_TEMP);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
 
         if (Utils.isBatteryPresent(getContext())) {
