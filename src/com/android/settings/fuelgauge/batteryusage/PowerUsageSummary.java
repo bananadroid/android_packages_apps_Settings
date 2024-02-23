@@ -18,7 +18,6 @@ package com.android.settings.fuelgauge.batteryusage;
 
 import static com.android.settings.fuelgauge.BatteryBroadcastReceiver.BatteryUpdateType;
 
-import android.annotation.Nullable;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.res.Resources;
@@ -32,7 +31,6 @@ import androidx.annotation.VisibleForTesting;
 import androidx.loader.app.LoaderManager;
 import androidx.loader.content.Loader;
 import androidx.preference.Preference;
-import android.util.Log;
 
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
@@ -49,11 +47,6 @@ import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.lang.Integer;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -72,9 +65,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
     static final String KEY_BATTERY_USAGE = "battery_usage_summary";
 
     private static final String KEY_BATTERY_TEMP = "battery_temperature";
-    private static final String KEY_CURRENT_BATTERY_CAPACITY = "current_battery_capacity";
-    private static final String KEY_DESIGNED_BATTERY_CAPACITY = "designed_battery_capacity";
-    private static final String KEY_BATTERY_CHARGE_CYCLES = "battery_charge_cycles";
     private static final String KEY_FAST_CHARGING = "fast_charging";
 
     @VisibleForTesting
@@ -85,12 +75,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
     BatteryUtils mBatteryUtils;
     @VisibleForTesting
     BatteryInfo mBatteryInfo;
-    @VisibleForTesting
-    PowerGaugePreference mCurrentBatteryCapacity;
-    @VisibleForTesting
-    PowerGaugePreference mDesignedBatteryCapacity;
-    @VisibleForTesting
-    PowerGaugePreference mBatteryChargeCycles;
 
     @VisibleForTesting
     BatteryHeaderPreferenceController mBatteryHeaderPreferenceController;
@@ -102,8 +86,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
     Preference mHelpPreference;
     @VisibleForTesting
     Preference mBatteryUsagePreference;
-
-    boolean mBatteryHealthSupported;
 
     @VisibleForTesting
     final ContentObserver mSettingsObserver = new ContentObserver(new Handler()) {
@@ -184,20 +166,7 @@ public class PowerUsageSummary extends PowerUsageBase implements
         initPreference();
 
         mBatteryTempPref = (PowerGaugePreference) findPreference(KEY_BATTERY_TEMP);
-        mCurrentBatteryCapacity = (PowerGaugePreference) findPreference(
-                KEY_CURRENT_BATTERY_CAPACITY);
-        mDesignedBatteryCapacity = (PowerGaugePreference) findPreference(
-                KEY_DESIGNED_BATTERY_CAPACITY);
-        mBatteryChargeCycles = (PowerGaugePreference) findPreference(
-                KEY_BATTERY_CHARGE_CYCLES);
         mBatteryUtils = BatteryUtils.getInstance(getContext());
-
-        mBatteryHealthSupported = getResources().getBoolean(R.bool.config_supportBatteryHealth);
-        if (!mBatteryHealthSupported) {
-            getPreferenceScreen().removePreference(mCurrentBatteryCapacity);
-            getPreferenceScreen().removePreference(mDesignedBatteryCapacity);
-            getPreferenceScreen().removePreference(mBatteryChargeCycles);
-        }
 
         if (Utils.isBatteryPresent(getContext())) {
             restartBatteryInfoLoader();
@@ -263,12 +232,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
         }
         // reload BatteryInfo and updateUI
         restartBatteryInfoLoader();
-
-        if (mBatteryHealthSupported) {
-            mCurrentBatteryCapacity.setSummary(parseBatterymAhText(getResources().getString(R.string.config_batteryCalculatedCapacity)));
-            mDesignedBatteryCapacity.setSummary(parseBatterymAhText(getResources().getString(R.string.config_batteryDesignCapacity)));
-            mBatteryChargeCycles.setSummary(parseBatteryCycle(getResources().getString(R.string.config_batteryChargeCycles)));
-        }
     }
 
     @VisibleForTesting
@@ -331,49 +294,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
         restartBatteryTipLoader();
     }
 
-    private String parseBatterymAhText(String file) {
-        try {
-            return Integer.parseInt(readLine(file)) / 1000 + " mAh";
-        } catch (IOException ioe) {
-            Log.e(TAG, "Cannot read battery capacity from "
-                    + file, ioe);
-        } catch (NumberFormatException nfe) {
-            Log.e(TAG, "Read a badly formatted battery capacity from "
-                    + file, nfe);
-        }
-        return getResources().getString(R.string.status_unavailable);
-    }
-
-    private String parseBatteryCycle(String file) {
-        try {
-            return Integer.parseInt(readLine(file)) + " Cycles";
-        } catch (IOException ioe) {
-            Log.e(TAG, "Cannot read battery cycle from "
-                    + file, ioe);
-        } catch (NumberFormatException nfe) {
-            Log.e(TAG, "Read a badly formatted battery cycle from "
-                    + file, nfe);
-        }
-        return getResources().getString(R.string.status_unavailable);
-    }
-
-    /**
-    * Reads a line from the specified file.
-    *
-    * @param filename The file to read from.
-    * @return The first line up to 256 characters, or <code>null</code> if file is empty.
-    * @throws IOException If the file couldn't be read.
-    */
-    @Nullable
-    private String readLine(String filename) throws IOException {
-        final BufferedReader reader = new BufferedReader(new FileReader(filename), 256);
-        try {
-            return reader.readLine();
-        } finally {
-            reader.close();
-        }
-    }
-
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
             new BaseSearchIndexProvider(R.xml.power_usage_summary) {
 
@@ -381,12 +301,6 @@ public class PowerUsageSummary extends PowerUsageBase implements
                 public List<String> getNonIndexableKeys(Context context) {
                     List<String> keys = super.getNonIndexableKeys(context);
                     final Resources res = context.getResources();
-
-                    if (!context.getResources().getBoolean(R.bool.config_supportBatteryHealth)) {
-                        keys.add(KEY_CURRENT_BATTERY_CAPACITY);
-                        keys.add(KEY_DESIGNED_BATTERY_CAPACITY);
-                        keys.add(KEY_BATTERY_CHARGE_CYCLES);
-                    }
 
                     boolean mFastChargingSupported = res.getBoolean(
                             R.bool.config_lineageFastChargeSupported);

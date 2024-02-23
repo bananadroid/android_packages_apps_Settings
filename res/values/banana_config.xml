@@ -27,12 +27,6 @@
     <!-- Whether to enable Lineage Fast Charge Preference -->
     <bool name="config_lineageFastChargeSupported">true</bool>
 
-    <!-- Battery Health -->
-    <string name="config_batteryCalculatedCapacity">/sys/class/power_supply/bms/charge_full</string>
-    <string name="config_batteryDesignCapacity">/sys/class/power_supply/bms/charge_full_design</string>
-    <string name="config_batteryChargeCycles">/sys/class/power_supply/bms/cycle_count</string>
-    <bool name="config_supportBatteryHealth">false</bool>
-
     <!-- Whether to show peak refresh rate in display settings -->
     <bool name="config_show_peak_refresh_rate_switch">false</bool>
 
