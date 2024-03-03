@@ -237,6 +237,9 @@
     <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
 
+    <!-- Volume panel -->
+    <string name="volume_panel_category">Volume panel</string>
+
     <!-- Per-app volume control -->
     <string name="app_volume">App volume</string>
     <string name="app_volume_title">Per-app volume control</string>
@@ -627,9 +630,9 @@
     <string name="alarm_blocker_warning">Blocking alarms have the potential to cause instability, crashes or data loss.</string>
 
     <!-- Volume TextView -->
-    <string name="volume_persen_switch_title">Volume Percentage</string>
-    <string name="volume_persen_switch_summary">show volume panel percentage</string>
-    <string name="volume_persen_style_title">Percentage Location</string>
+    <string name="volume_persen_switch_title">Volume percentage</string>
+    <string name="volume_persen_switch_summary">Show volume panel percentage</string>
+    <string name="volume_persen_style_title">Percentage location</string>
     <string name="volume_persen_style_top">Top</string>
     <string name="volume_persen_style_bottom">Bottom</string>
 
